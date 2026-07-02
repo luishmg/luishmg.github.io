@@ -1,3 +1,56 @@
 site_name: Luis Gomes
+site_url: https://luishmg.github.io
+site_author: Luis Gomes
+site_description: >-
+  Platform / Kubernetes engineer moving into AI platform & LLMOps.
+  Portfolio and technical notes.
+
 theme:
   name: material
+  icon:
+    logo: material/console-line
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+nav:
+  - Home: index.md
+  - Notes:
+      - Ansible Roles: Ansible/roles.md
+      - Namespace Commands: Commands/namespace.md
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search

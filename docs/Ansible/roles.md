@@ -3,9 +3,9 @@
 ## Base centos
 It's a role create to deal with base changes, [go to repo](https://github.com/luishmg/centos).
 
-| :warning: WARNING                |
-|:---------------------------------|
-| The hardening were not done yet. |
+!!! warning
+
+    The hardening were not done yet.
 
 ## HAProxy
 It's a role prepare the system to be a haproxy golden image, [go to repo](https://github.com/luishmg/haproxy).
